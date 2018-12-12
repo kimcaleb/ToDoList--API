@@ -18,7 +18,8 @@ app.use(logger("dev"));
 
 
 // Routes
-
+const todolistRouter = require("./routers/routerToDoList");
+app.use("/api/todolists", todolistRouter);
 
 
 // Listen on Port

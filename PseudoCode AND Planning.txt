@@ -36,3 +36,4 @@
 		Inside, import express module then create Router object with it. express.Router()
 		create the rounter.get(), etc functions. 
 		Export router object. 
+7. Back in server.js import router module. Establish router: app.use("/api/collectionName", router);
