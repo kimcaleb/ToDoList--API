@@ -18,3 +18,12 @@
 	inside index.js, import mongoose module
 	do mongoose.connetct(URL, newURLParse Obect, Function)
 	export mongoose variable to server.js file. 
+	Inside server.js file, require in that mongoose object. 
+
+4. Create your database model - todolists
+	Create todoList.js file in models folder
+		Inside, require just mongoose module
+		Create collection schema: var = new mongoose.Schema({schema}, {timestamps:true});
+		Create model: var = mongoose.model("NameOfSchema", todolistSchema object)
+		export model object. 
+
