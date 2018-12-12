@@ -20,6 +20,10 @@ app.use(logger("dev"));
 // Routes
 const todolistRouter = require("./routers/routerToDoList");
 app.use("/api/todolists", todolistRouter);
+app.get("/",(req,res) =>{
+    res.sendFile("index.html");
+});
+
 
 
 // Listen on Port
