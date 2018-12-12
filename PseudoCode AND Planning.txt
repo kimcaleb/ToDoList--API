@@ -1,0 +1,14 @@
+1. Create and Establish Server
+	Create server.js file.
+	Create Public, Controllers, Routers, db, models directories
+	git init and push to repo on Github
+	Install all dependencies - express,morgan,mongoose,dotenv
+	create .gitignore, .env files
+	store sensitive info on .env
+	Create database - todolists.
+2. On server.js file
+	create variables
+	import relevant modules - dotenv, express, path, db
+	config middleware - json parser, static paths
+	
+	
