@@ -9,10 +9,12 @@ const
 
 
 // Configuration 
-
+require("./db/index");
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(path.join(__dirname,"public","views")));
+app.use(logger("dev"));
 
 
 // Routes

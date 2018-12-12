@@ -9,6 +9,12 @@
 2. On server.js file
 	create variables
 	import relevant modules - dotenv, express, path, db
-	config middleware - json parser, static paths
+	config middleware - json parser, static paths, logger(morgan)
+	configure app.listen()
+	configure routes - model
 	
-	
+3. Configure database
+	create index.js file in db directory.
+	inside index.js, import mongoose module
+	do mongoose.connetct(URL, newURLParse Obect, Function)
+	export mongoose variable to server.js file. 
