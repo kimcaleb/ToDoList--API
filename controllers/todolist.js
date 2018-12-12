@@ -7,6 +7,12 @@ module.exports = {
             res.json({success:true,todolists});
         });
     },
+    create: (req,res) => {
+        ToDoList.create(req.body, (err,newtodolist) => {
+            if (err) res.json({success:false,err});
+            res.json({success:true,newtodolist});
+        });
+    },
     destroy: (req,res) => {
         ToDoList.findByIdAndDelete(req.params.id, (err,todoitem) => {
             if (err) res.json({success:false, err});
@@ -14,9 +20,9 @@ module.exports = {
         });
     },
     update: (req,res) => {  
-        ToDoList.findByIdAndUpdate(req.params.id, (err,updateditem) =>{
+        ToDoList.findByIdAndUpdate(req.params.id,req.body,{new:true},(err,updateditem) =>{
             if (err) res.json({success:false, err});
             res.json({success:true,updateditem});
         });
     }
-}
+} 

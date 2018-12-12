@@ -28,5 +28,11 @@
 		export model object. 
 5. Create controller - todolist
 	create todolist.js file in controller folder
-		Inside, 
-
+		Inside, create your methods for your RESTFUL API routes.Remember, for the update method, you need to pass in the extra argument: {new:true}
+		Stores these methods with their var name in an object and export that export. 
+		
+6. Create router - todoList
+	create routerCollectionName.js file
+		Inside, import express module then create Router object with it. express.Router()
+		create the rounter.get(), etc functions. 
+		Export router object. 
