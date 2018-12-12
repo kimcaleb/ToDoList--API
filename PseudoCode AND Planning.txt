@@ -26,4 +26,7 @@
 		Create collection schema: var = new mongoose.Schema({schema}, {timestamps:true});
 		Create model: var = mongoose.model("NameOfSchema", todolistSchema object)
 		export model object. 
+5. Create controller - todolist
+	create todolist.js file in controller folder
+		Inside, 
 
