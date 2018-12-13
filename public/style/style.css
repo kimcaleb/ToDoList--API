@@ -1,0 +1,11 @@
+.container {
+   margin-top:30px;
+}
+li {
+    font-size:30px;
+    margin-left:40px;
+}
+
+#delete {
+    margin-left: -40px;
+}
